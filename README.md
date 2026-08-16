@@ -25,7 +25,8 @@ Preview local: [http://127.0.0.1:5173](http://127.0.0.1:5173)
 
 ## Deploy
 
-`vercel.json` listo (Vite → `dist`). El sitio `https://orne-digital.vercel.app` **no** es este repo: quedó atado al prototipador y al 2026-08-16 seguía el layout anterior a `a5db806`. Conectar **este** repo a un proyecto Vercel nuevo (o re-apuntar el existente al Root Directory de esta carpeta).
+Sitio: [https://orne-digital.vercel.app](https://orne-digital.vercel.app)
+Repo: [https://github.com/TICIANOTAUP12/OrneDigital](https://github.com/TICIANOTAUP12/OrneDigital)
 
 ## Workspace
 

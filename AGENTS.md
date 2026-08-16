@@ -24,7 +24,9 @@ npm run dev
 
 ## Deploy
 
-Proyecto Vercel propio de **esta** carpeta (no el preview `orne-digital.vercel.app` atado al prototipador). `vercel.json` ya está.
+Proyecto Vercel `orne-digital` (equipo agencia-ta): https://orne-digital.vercel.app
+Repo: https://github.com/TICIANOTAUP12/OrneDigital (`master`, SHA `040f924`).
+Autodeploy GitHub→Vercel: falta conectar el repo en el dashboard (el deploy actual fue por CLI).
 
 ## Pendiente de assets
 
