@@ -506,7 +506,7 @@ export default function App() {
         </ul>
       </section>
 
-      <section className="cta-final" id="siguiente-paso">
+      <section className="cta-final" id="contacto">
         <Reveal className="cta-final-inner">
           <p className="socials-kicker">Siguiente paso</p>
           <h2>¿Lista para dar el siguiente paso?</h2>
@@ -517,26 +517,6 @@ export default function App() {
           <a className="cta-primary" href={hireHref} target="_blank" rel="noreferrer">
             Hablemos
           </a>
-        </Reveal>
-      </section>
-
-      <section className="contact" id="contacto">
-        <Reveal className="contact-card">
-          <div className="contact-copy">
-            <h2>Hablemos por WhatsApp</h2>
-            <p>
-              Contame tu marca y qué necesitás. Te respondo con claridad para
-              ver el mejor siguiente paso.
-            </p>
-            <a
-              className="cta-primary cta-contact"
-              href={contactHref}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Contactar por WhatsApp
-            </a>
-          </div>
         </Reveal>
       </section>
 

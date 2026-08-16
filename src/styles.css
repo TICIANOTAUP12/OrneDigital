@@ -224,8 +224,7 @@ button {
 .cm-offers,
 .testimonials,
 .shop,
-.cta-final,
-.contact {
+.cta-final {
   padding: clamp(3.5rem, 9vw, 6.5rem) clamp(1.25rem, 4vw, 3rem);
 }
 
@@ -432,40 +431,6 @@ button {
   background: var(--accent);
   color: var(--accent-ink);
   border-color: var(--accent);
-}
-
-.contact {
-  padding-top: clamp(2.5rem, 6vw, 4rem);
-}
-
-.contact-card {
-  display: grid;
-  gap: 1.35rem;
-  align-items: center;
-  max-width: 52rem;
-  margin: 0 auto;
-  padding: 1.5rem;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 0.5rem;
-}
-
-.contact-copy h2 {
-  margin: 0 0 0.55rem;
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 3.4vw, 2.4rem);
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-.contact-copy p {
-  margin: 0 0 1.2rem;
-  color: var(--muted);
-  max-width: 34rem;
-}
-
-.cta-contact {
-  display: inline-flex;
 }
 
 .cta-final {
@@ -772,10 +737,6 @@ button {
 
   .about-media {
     min-height: 100%;
-  }
-
-  .contact-card {
-    padding: 1.75rem 2rem;
   }
 
   .product-grid {
