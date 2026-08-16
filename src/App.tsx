@@ -334,31 +334,31 @@ export default function App() {
       </section>
 
       <section className="about" id="sobre-mi">
-        <Reveal className="about-copy">
-          <h2>Sobre mí</h2>
-          <p>
-            Soy Community Manager con más de 4 años de experiencia en redes y
-            crecimiento de marcas.
-          </p>
-          <p>
-            Mi trabajo va más allá de publicar: construyo confianza, comunidad
-            y una estrategia clara para que la marca se vea y se sienta
-            profesional.
-          </p>
-          <p>
-            Armé este espacio para que puedas acceder a mis servicios y
-            recursos, ya sea que tengas un negocio o estés empezando tu camino
-            como Community Manager.
-          </p>
-          <div className="cta-row">
+        <div className="about-split">
+          <div className="about-media">
+            <img src="/orne-perfil.png" alt="Orne — Community Manager" />
+          </div>
+          <Reveal className="about-copy">
+            <h2>Sobre mí</h2>
+            <p>
+              Hace más de 4 años trabajo como Community Manager,
+              especializándome en redes y crecimiento de marcas.
+            </p>
+            <p>
+              Aunque el trabajo se ve en el feed, mi enfoque va más allá de
+              publicar: construyo confianza, comunidad y una estrategia clara
+              para que la marca se vea y se sienta profesional.
+            </p>
+            <p>
+              Armé este espacio para que puedas acceder a mis servicios y
+              recursos, ya sea que tengas un negocio o estés empezando tu
+              camino como Community Manager.
+            </p>
             <a className="cta-primary" href={IG_URL} target="_blank" rel="noreferrer">
               Ver portfolio
             </a>
-            <a className="cta-ghost" href="#contacto">
-              Contacto
-            </a>
-          </div>
-        </Reveal>
+          </Reveal>
+        </div>
       </section>
 
       <section className="services" id="servicios">

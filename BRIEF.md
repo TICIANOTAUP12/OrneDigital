@@ -35,8 +35,8 @@
 - Imagen dominante: foto Orne.
 
 ### Sobre mí
-- Foto placeholder de Orne.
-- CM +4 años; más allá de publicar; confianza y comunidad; espacio para marcas y CMs que empiezan.
+- Layout tipo Celeste: split foto izquierda + texto derecha, fondo suave, un solo CTA “Ver portfolio” (IG).
+- Copy de Orne: +4 años CM; más allá de publicar; confianza y comunidad; espacio para marcas y CMs.
 
 ### Servicios (6)
 1. Community Manager (mensual)

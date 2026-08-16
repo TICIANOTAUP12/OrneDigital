@@ -239,7 +239,6 @@ button {
   }
 }
 
-.about,
 .services,
 .cm-offers,
 .testimonials,
@@ -251,8 +250,36 @@ button {
 }
 
 .about {
-  max-width: 44rem;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-soft);
+}
+
+.about-split {
+  display: grid;
+  align-items: stretch;
+}
+
+.about-media {
+  background: #111;
+  min-height: 22rem;
+  overflow: hidden;
+}
+
+.about-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+}
+
+.about-copy {
+  padding: clamp(2rem, 6vw, 4.25rem) clamp(1.35rem, 5vw, 3.75rem);
+  display: grid;
+  align-content: center;
+  justify-items: start;
 }
 
 .about-copy h2,
@@ -271,10 +298,10 @@ button {
   margin: 0 0 1rem;
   color: var(--muted);
   font-size: 1.05rem;
-  max-width: 38rem;
+  max-width: 36rem;
 }
 
-.about-copy .cta-row {
+.about-copy .cta-primary {
   margin-top: 0.5rem;
 }
 
@@ -754,6 +781,15 @@ button {
   .hero-media {
     max-width: none;
     justify-self: end;
+  }
+
+  .about-split {
+    grid-template-columns: 1fr 1fr;
+    min-height: min(32rem, 78vh);
+  }
+
+  .about-media {
+    min-height: 100%;
   }
 
   .contact-card {
