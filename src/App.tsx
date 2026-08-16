@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 
 const WA_BASE = "https://wa.me/5492645720932";
 const IG_HANDLE = "ornecerderaa.digital";
@@ -220,23 +220,6 @@ export default function App() {
   const [purchaseDone, setPurchaseDone] = useState<string | null>(null);
   const [openServiceId, setOpenServiceId] = useState<string | null>(null);
 
-  useEffect(() => {
-    const nodes = document.querySelectorAll(".reveal");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        }
-      },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
-    );
-    nodes.forEach((node) => observer.observe(node));
-    return () => observer.disconnect();
-  }, []);
-
   function showToast(message: string) {
     setToast(message);
     window.setTimeout(() => setToast(null), 3200);
@@ -378,7 +361,7 @@ export default function App() {
               <li
                 key={service.id}
                 className={`service-item reveal${isOpen ? " is-open" : ""}`}
-                style={{ transitionDelay: `${index * 40}ms` }}
+                style={{ animationDelay: `${index * 40}ms` }}
               >
                 <button
                   type="button"
@@ -438,7 +421,7 @@ export default function App() {
             <li
               key={offer.id}
               className="offer-card reveal"
-              style={{ transitionDelay: `${index * 50}ms` }}
+              style={{ animationDelay: `${index * 50}ms` }}
             >
               <h3>{offer.title}</h3>
               <p>{offer.blurb}</p>
@@ -491,7 +474,7 @@ export default function App() {
             <li
               key={product.id}
               className="product reveal"
-              style={{ transitionDelay: `${index * 50}ms` }}
+              style={{ animationDelay: `${index * 50}ms` }}
             >
               <div className="product-cover" data-pdf-cover={product.id}>
                 <AssetSlot
