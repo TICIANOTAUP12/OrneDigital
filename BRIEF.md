@@ -28,9 +28,11 @@
 ## Contenido (fuente: Ornela)
 
 ### Hero
-- Brand / headline: **Orne Digital**
-- Intro: *Hola soy Orne! Impulso marcas a crecer en sus redes sociales con estrategia, claridad y visión profesional.*
-- Imagen dominante full-bleed (placeholder atmosférico / foto Orne pendiente).
+- Brand / headline: **Hola, soy Orne**
+- Lede: impulso marcas y acompaño CMs (estructura tipo [Community Celeste](https://communityceleste.tiendup.com/), copy de Orne).
+- Intro: servicios y recursos para marcas y CMs.
+- CTA en primera viewport: Contratar (WA) + Ver recursos.
+- Imagen dominante: foto Orne.
 
 ### Sobre mí
 - Foto placeholder de Orne.
@@ -80,4 +82,6 @@
 
 ## Ref visual
 
-- Moodboard (no copiar 1:1): https://communityceleste.tiendup.com/
+- Moodboard de estructura (no catálogo ni precios): https://communityceleste.tiendup.com/
+- Copiado de Celeste: cajas de servicio que se abren con includes, grilla de PDF tipo tienda, bloque “para CMs”, CTA reunión / hablemos.
+- No copiado: precios, branding $600k, honorarios Ads, guías 1–4 de Cele, login/carrito Tiendup, newsletter.

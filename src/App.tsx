@@ -12,6 +12,7 @@ type Service = {
   id: string;
   title: string;
   blurb: string;
+  includes: string[];
   note?: string;
 };
 
@@ -20,39 +21,74 @@ const SERVICES: Service[] = [
     id: "cm",
     title: "Community Manager (mensual)",
     blurb:
-      "Optimización estética, ideas, planificación IG/TikTok, jornadas de contenido, destacadas, posteos/reels y edición.",
+      "Gestión estratégica, constante y profesional de la presencia digital de la marca.",
+    includes: [
+      "Optimización estética del feed",
+      "Ideas de contenido alineadas a la marca",
+      "Planificación IG / TikTok",
+      "Jornadas de contenido",
+      "Historias destacadas",
+      "Posteos, reels y edición",
+    ],
   },
   {
     id: "estrategia",
     title: "Estrategia Marketing inicial",
     blurb:
-      "Públicos, buyer persona, competencia, FODA e ideas estratégicas.",
+      "Análisis para definir el rumbo del contenido y las acciones digitales.",
+    includes: [
+      "Definición de públicos",
+      "Buyer persona",
+      "Análisis de la competencia",
+      "Análisis FODA",
+      "Ideas de contenido estratégicas",
+    ],
     note: "Incluida sin costo extra si contratás Community Manager.",
   },
   {
     id: "ads",
     title: "Meta Ads",
     blurb:
-      "Configuración de campañas, segmentación, optimización y análisis. Encargada: Denise Yafar.",
+      "Configuración y gestión de campañas. Encargada: Denise Yafar.",
+    includes: [
+      "Configuración de campañas",
+      "Segmentación de públicos",
+      "Optimización de anuncios",
+      "Análisis de resultados",
+    ],
     note: "Recomendamos sumarlo después del primer mes de CM.",
   },
   {
     id: "contenido",
     title: "Creación de contenido (presencial)",
     blurb:
-      "Valor por hora. Aprox. 4 videos por hora. Independiente del servicio de Community Manager.",
+      "Producción audiovisual para alimentar las redes durante el mes.",
+    includes: [
+      "Valor por hora de creación de contenido",
+      "Se realiza de forma presencial",
+      "De 1 hora de grabación: aprox. 4 videos",
+      "Independiente del servicio de Community Manager",
+    ],
   },
   {
     id: "diseno",
     title: "Diseño gráfico",
-    blurb:
-      "Piezas para redes e impresión: flyers, tarjetas, catálogos y más.",
+    blurb: "Piezas para redes e impresión.",
+    includes: [
+      "Flyers",
+      "Tarjetas",
+      "Catálogos",
+      "Piezas para feed, stories y más",
+    ],
   },
   {
     id: "web",
     title: "Página web prediseñada",
-    blurb:
-      "Armado en Empretienda / Tienda Nube: carga de productos + dominio propio incluido.",
+    blurb: "Armado en Empretienda / Tienda Nube.",
+    includes: [
+      "Carga de productos",
+      "Dominio propio incluido",
+    ],
   },
 ];
 
@@ -60,6 +96,7 @@ type PdfProduct = {
   id: string;
   title: string;
   blurb: string;
+  category: string;
   priceLabel: string;
   coverSrc: string;
 };
@@ -69,6 +106,7 @@ const PDF_PRODUCTS: PdfProduct[] = [
     id: "hooks",
     title: "Pack de 100 hooks para reel",
     blurb: "Aperturas listas para frenar el scroll y empezar fuerte.",
+    category: "Recursos PDF",
     priceLabel: "Precio a confirmar",
     coverSrc: "/pdf/hooks-cover.jpg",
   },
@@ -76,6 +114,7 @@ const PDF_PRODUCTS: PdfProduct[] = [
     id: "copys",
     title: "Copys estratégicos para reels y publicaciones",
     blurb: "Aprendé a escribir textos que venden sin sonar forzados.",
+    category: "Recursos PDF",
     priceLabel: "Precio a confirmar",
     coverSrc: "/pdf/copys-cover.jpg",
   },
@@ -83,6 +122,7 @@ const PDF_PRODUCTS: PdfProduct[] = [
     id: "ctas",
     title: "Pack de CTAs que convierten",
     blurb: "Llamados a la acción claros para stories, reels y feed.",
+    category: "Recursos PDF",
     priceLabel: "Precio a confirmar",
     coverSrc: "/pdf/ctas-cover.jpg",
   },
@@ -90,10 +130,20 @@ const PDF_PRODUCTS: PdfProduct[] = [
     id: "ideas",
     title: "X ideas de contenido para tu negocio",
     blurb: "Ideas accionables para no quedarte sin qué publicar.",
+    category: "Recursos PDF",
     priceLabel: "Precio a confirmar",
     coverSrc: "/pdf/ideas-cover.jpg",
   },
 ];
+
+type OfferCard = {
+  id: string;
+  title: string;
+  blurb: string;
+  cta: string;
+  href: string;
+  isExternal: boolean;
+};
 
 type Testimonial = {
   id: string;
@@ -211,6 +261,33 @@ export default function App() {
   const hireHref = waLink(
     "Hola Orne! Quiero contratar servicios de Orne Digital.",
   );
+  const meetingHref = waLink(
+    "Hola Orne! Quiero agendar una reunión para hablar de mi marca / servicio.",
+  );
+  const cmHref = waLink(
+    "Hola Orne! Soy Community Manager / freelancer y quiero una asesoría.",
+  );
+
+  const cmOffers: OfferCard[] = [
+    {
+      id: "asesoria",
+      title: "¿Sentís que tu servicio está estancado?",
+      blurb:
+        "Una conversación 1:1 para destrabar dudas, ordenar tu oferta y dar el siguiente paso como CM o freelancer.",
+      cta: "Reservar conversación",
+      href: cmHref,
+      isExternal: true,
+    },
+    {
+      id: "guias",
+      title: "Kit de recursos PDF",
+      blurb:
+        "Hooks, copys, CTAs e ideas de contenido para dejar de improvisar y trabajar con más claridad.",
+      cta: "Ver recursos",
+      href: "#tienda",
+      isExternal: false,
+    },
+  ];
 
   const bannerItems = [...TESTIMONIALS, ...TESTIMONIALS];
 
@@ -223,7 +300,7 @@ export default function App() {
         <nav className="nav" aria-label="Secciones">
           <a href="#sobre-mi">Sobre mí</a>
           <a href="#servicios">Servicios</a>
-          <a href="#testimonios">Testimonios</a>
+          <a href="#tienda">Recursos</a>
           <a href="#contacto">Contacto</a>
         </nav>
         <a className="cta-top" href={contactHref} target="_blank" rel="noreferrer">
@@ -235,9 +312,21 @@ export default function App() {
         <div className="hero-copy">
           <h1 className="brand-hero">Hola, soy Orne</h1>
           <p className="lede">
-            Impulso marcas a crecer en sus redes sociales con estrategia,
+            Impulso marcas y acompaño Community Managers con estrategia,
             claridad y visión profesional.
           </p>
+          <p className="hero-intro">
+            Estos son mis servicios y recursos para marcas y Community Managers
+            que quieren crecer de verdad.
+          </p>
+          <div className="cta-row">
+            <a className="cta-primary" href={hireHref} target="_blank" rel="noreferrer">
+              Contratar
+            </a>
+            <a className="cta-ghost" href="#tienda">
+              Ver recursos
+            </a>
+          </div>
         </div>
         <div className="hero-media">
           <img src="/orne-perfil.png" alt="Orne — Community Manager" />
@@ -248,16 +337,22 @@ export default function App() {
         <Reveal className="about-copy">
           <h2>Sobre mí</h2>
           <p>
-            Soy Community Manager con más de 4 años de experiencia. Mi trabajo
-            va más allá de publicar: construyo confianza y comunidad.
+            Soy Community Manager con más de 4 años de experiencia en redes y
+            crecimiento de marcas.
           </p>
           <p>
-            Creo un espacio para marcas que quieren crecer con claridad, y
-            también para community managers que están empezando.
+            Mi trabajo va más allá de publicar: construyo confianza, comunidad
+            y una estrategia clara para que la marca se vea y se sienta
+            profesional.
+          </p>
+          <p>
+            Armé este espacio para que puedas acceder a mis servicios y
+            recursos, ya sea que tengas un negocio o estés empezando tu camino
+            como Community Manager.
           </p>
           <div className="cta-row">
-            <a className="cta-primary" href={hireHref} target="_blank" rel="noreferrer">
-              Contratar
+            <a className="cta-primary" href={IG_URL} target="_blank" rel="noreferrer">
+              Ver portfolio
             </a>
             <a className="cta-ghost" href="#contacto">
               Contacto
@@ -270,7 +365,7 @@ export default function App() {
         <Reveal className="section-head">
           <h2>Servicios</h2>
           <p className="section-lede">
-            Tocá cada servicio para ver el detalle. “Contratar servicio” abre
+            Tocá cada caja para ver qué incluye. “Contratar servicio” abre
             WhatsApp.
           </p>
         </Reveal>
@@ -298,9 +393,15 @@ export default function App() {
                 <div className="service-panel" id={panelId} hidden={!isOpen}>
                   <div className="service-panel-inner">
                     <p>{service.blurb}</p>
+                    <ul className="service-includes">
+                      {service.includes.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
                     {service.note ? (
                       <p className="service-note">{service.note}</p>
                     ) : null}
+                    <p className="service-price">Consultar por WhatsApp</p>
                     <a
                       className="cta-service"
                       href={waLink(
@@ -316,6 +417,42 @@ export default function App() {
               </li>
             );
           })}
+        </ul>
+        <Reveal className="mid-cta">
+          <a className="cta-primary" href={meetingHref} target="_blank" rel="noreferrer">
+            Agendar una reunión
+          </a>
+        </Reveal>
+      </section>
+
+      <section className="cm-offers" id="asesorias">
+        <Reveal className="section-head">
+          <h2>Servicios para Community Managers</h2>
+          <p className="section-lede">
+            Para CMs y freelancers que quieren ordenar su trabajo y crecer con
+            más estrategia.
+          </p>
+        </Reveal>
+        <ul className="offer-grid">
+          {cmOffers.map((offer, index) => (
+            <li
+              key={offer.id}
+              className="offer-card reveal"
+              style={{ transitionDelay: `${index * 50}ms` }}
+            >
+              <h3>{offer.title}</h3>
+              <p>{offer.blurb}</p>
+              <a
+                className="cta-service"
+                href={offer.href}
+                {...(offer.isExternal
+                  ? { target: "_blank", rel: "noreferrer" }
+                  : {})}
+              >
+                {offer.cta}
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
 
@@ -343,9 +480,10 @@ export default function App() {
 
       <section className="shop" id="tienda">
         <Reveal className="section-head">
-          <h2>Recursos PDF</h2>
+          <h2>Guías prácticas</h2>
           <p className="section-lede">
-            Compra simulada. En producción: checkout → PDF al mail.
+            Recursos para avanzar más rápido, con claridad y estructura. Compra
+            simulada: en producción, checkout → PDF al mail.
           </p>
         </Reveal>
         <ul className="product-grid">
@@ -363,6 +501,7 @@ export default function App() {
                   className="product-cover-img"
                 />
               </div>
+              <p className="product-kicker">{product.category}</p>
               <h3>{product.title}</h3>
               <p>{product.blurb}</p>
               <p className="product-price">{product.priceLabel}</p>
@@ -380,7 +519,12 @@ export default function App() {
 
       <section className="cta-final" id="siguiente-paso">
         <Reveal className="cta-final-inner">
+          <p className="socials-kicker">Siguiente paso</p>
           <h2>¿Lista para dar el siguiente paso?</h2>
+          <p className="section-lede">
+            Ya sea que tengas una marca o quieras crecer como Community Manager,
+            tengo una propuesta para vos.
+          </p>
           <a className="cta-primary" href={hireHref} target="_blank" rel="noreferrer">
             Hablemos
           </a>
@@ -422,7 +566,7 @@ export default function App() {
 
       <footer className="footer">
         <p className="footer-brand">Orne Digital</p>
-        <p>Prototipo TAUP · precios pendientes</p>
+        <p>Community · estrategia · recursos para CM</p>
         <a href={IG_URL} target="_blank" rel="noreferrer">
           @{IG_HANDLE}
         </a>
