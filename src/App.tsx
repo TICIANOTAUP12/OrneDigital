@@ -411,10 +411,10 @@ export default function App() {
 
       <section className="cm-offers" id="asesorias">
         <Reveal className="section-head">
-          <h2>Servicios para Community Managers</h2>
+          <h2>Servicios / Recursos</h2>
           <p className="section-lede">
-            Para CMs y freelancers que quieren ordenar su trabajo y crecer con
-            más estrategia.
+            Para negocios, emprendimientos, creadores de contenido y CMs que
+            quieran ordenar su trabajo y crecer con más estrategia.
           </p>
         </Reveal>
         <ul className="offer-grid">
