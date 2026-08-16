@@ -28,15 +28,13 @@
 ## Contenido (fuente: Ornela)
 
 ### Hero
-- Brand / headline: **Hola, soy Orne**
-- Lede: impulso marcas y acompaño CMs (estructura tipo [Community Celeste](https://communityceleste.tiendup.com/), copy de Orne).
-- Intro: servicios y recursos para marcas y CMs.
-- CTA en primera viewport: Contratar (WA) + Ver recursos.
-- Imagen dominante: foto Orne.
+- Headline centrado: **Hola, soy Orne** + monograma OC (PNG sin fondo).
+- Lede: impulso marcas y acompaño CMs.
+- CTA en primera viewport: Contacto (`#contacto` → WhatsApp).
 
 ### Sobre mí
-- Layout tipo Celeste: split foto izquierda + texto derecha, fondo suave, un solo CTA “Ver portfolio” (IG).
-- Foto lifestyle (`orne-lifestyle.png`); el retrato oscuro queda en el hero.
+- Layout tipo Celeste: split foto izquierda + texto derecha, fondo suave, CTA **Contacto**.
+- Foto lifestyle (`orne-lifestyle.png`).
 - Copy de Orne: +4 años CM; más allá de publicar; confianza y comunidad; espacio para marcas y CMs.
 - Sin bloque reel de Instagram.
 

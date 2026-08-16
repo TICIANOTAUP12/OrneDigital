@@ -299,6 +299,7 @@ export default function App() {
 
       <section className="hero" id="top" aria-label="Inicio">
         <div className="hero-copy">
+          <img className="hero-mark" src="/logo-oc.png" alt="" />
           <h1 className="brand-hero">Hola, soy Orne</h1>
           <p className="lede">
             Impulso marcas y acompaño Community Managers con estrategia,
@@ -309,16 +310,10 @@ export default function App() {
             que quieren crecer de verdad.
           </p>
           <div className="cta-row">
-            <a className="cta-primary" href={hireHref} target="_blank" rel="noreferrer">
-              Contratar
-            </a>
-            <a className="cta-ghost" href="#tienda">
-              Ver recursos
+            <a className="cta-primary" href="#contacto">
+              Contacto
             </a>
           </div>
-        </div>
-        <div className="hero-media">
-          <img src="/orne-perfil.png" alt="Orne — Community Manager" />
         </div>
       </section>
 
@@ -343,8 +338,8 @@ export default function App() {
               recursos, ya sea que tengas un negocio o estés empezando tu
               camino como Community Manager.
             </p>
-            <a className="cta-primary" href={IG_URL} target="_blank" rel="noreferrer">
-              Ver portfolio
+            <a className="cta-primary" href="#contacto">
+              Contacto
             </a>
           </Reveal>
         </div>
