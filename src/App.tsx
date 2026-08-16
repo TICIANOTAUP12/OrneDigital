@@ -336,7 +336,7 @@ export default function App() {
       <section className="about" id="sobre-mi">
         <div className="about-split">
           <div className="about-media">
-            <img src="/orne-perfil.png" alt="Orne — Community Manager" />
+            <img src="/orne-lifestyle.png" alt="Orne trabajando con su notebook" />
           </div>
           <Reveal className="about-copy">
             <h2>Sobre mí</h2>
@@ -548,19 +548,6 @@ export default function App() {
               Contactar por WhatsApp
             </a>
           </div>
-        </Reveal>
-      </section>
-
-      <section className="socials" id="redes" aria-label="Redes sociales">
-        <Reveal className="socials-inner">
-          <p className="socials-kicker">Instagram</p>
-          <h2>Seguime en redes</h2>
-          <p className="section-lede">
-            Contenido, detrás de escena y análisis de marcas en @{IG_HANDLE}.
-          </p>
-          <a className="cta-ghost-ink" href={IG_URL} target="_blank" rel="noreferrer">
-            Seguir en Instagram
-          </a>
         </Reveal>
       </section>
 

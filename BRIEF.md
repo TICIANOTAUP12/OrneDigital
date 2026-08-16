@@ -36,7 +36,9 @@
 
 ### Sobre mí
 - Layout tipo Celeste: split foto izquierda + texto derecha, fondo suave, un solo CTA “Ver portfolio” (IG).
+- Foto lifestyle (`orne-lifestyle.png`); el retrato oscuro queda en el hero.
 - Copy de Orne: +4 años CM; más allá de publicar; confianza y comunidad; espacio para marcas y CMs.
+- Sin bloque reel de Instagram.
 
 ### Servicios (6)
 1. Community Manager (mensual)
