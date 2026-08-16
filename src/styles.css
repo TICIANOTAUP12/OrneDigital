@@ -68,8 +68,17 @@ button {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-size: 1.05rem;
   font-weight: 500;
+}
+
+.brand img {
+  height: 1.85rem;
+  width: auto;
+  display: block;
 }
 
 .nav {
@@ -537,7 +546,8 @@ button {
 .testimonial-slide .asset-fallback {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #ece7e4;
 }
 
 .testimonial-slide img {
@@ -646,6 +656,15 @@ button {
   font-size: 1.1rem;
   font-weight: 500;
   color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-brand img {
+  height: 1.7rem;
+  width: auto;
+  display: block;
 }
 
 .footer a {

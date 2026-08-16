@@ -154,23 +154,28 @@ type Testimonial = {
 const TESTIMONIALS: Testimonial[] = [
   {
     id: "t1",
-    src: "/testimonios/wa-1.jpg",
+    src: "/testimonios/wa-1.png",
     alt: "Captura de WhatsApp — testimonio 1",
   },
   {
     id: "t2",
-    src: "/testimonios/wa-2.jpg",
+    src: "/testimonios/wa-2.png",
     alt: "Captura de WhatsApp — testimonio 2",
   },
   {
     id: "t3",
-    src: "/testimonios/wa-3.jpg",
+    src: "/testimonios/wa-3.png",
     alt: "Captura de WhatsApp — testimonio 3",
   },
   {
     id: "t4",
-    src: "/testimonios/wa-4.jpg",
+    src: "/testimonios/wa-4.png",
     alt: "Captura de WhatsApp — testimonio 4",
+  },
+  {
+    id: "t5",
+    src: "/testimonios/wa-5.png",
+    alt: "Captura de WhatsApp — testimonio 5",
   },
 ];
 
@@ -278,7 +283,8 @@ export default function App() {
     <div className="page">
       <header className="topbar">
         <a className="brand" href="#top">
-          Orne Digital
+          <img src="/logo-oc.png" alt="" />
+          <span>Orne Digital</span>
         </a>
         <nav className="nav" aria-label="Secciones">
           <a href="#sobre-mi">Sobre mí</a>
@@ -535,7 +541,10 @@ export default function App() {
       </section>
 
       <footer className="footer">
-        <p className="footer-brand">Orne Digital</p>
+        <p className="footer-brand">
+          <img src="/logo-oc.png" alt="" />
+          <span>Orne Digital</span>
+        </p>
         <p>Community · estrategia · recursos para CM</p>
         <a href={IG_URL} target="_blank" rel="noreferrer">
           @{IG_HANDLE}
