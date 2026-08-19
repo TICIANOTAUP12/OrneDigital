@@ -56,7 +56,6 @@ const SERVICES: Service[] = [
       "Optimización de anuncios",
       "Análisis de resultados",
     ],
-    note: "Recomendamos sumarlo después del primer mes de CM.",
   },
   {
     id: "contenido",
