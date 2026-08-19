@@ -7,3 +7,6 @@ dist
 .env.*
 !.env.example
 .cursor/debug.log
+
+# PDFs de pago: el repo es público y la compra sigue simulada
+public/pdf/*.pdf

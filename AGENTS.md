@@ -30,5 +30,6 @@ Autodeploy GitHub→Vercel: falta conectar el repo en el dashboard (el deploy ac
 
 ## Pendiente de assets
 
-- Portadas PDF en `public/pdf/*-cover.jpg`
-- Capturas WA en `public/testimonios/wa-1.jpg` … `wa-4.jpg`
+- Portadas PDF: hooks e ideas ya están; faltan `copys-cover.jpg` y `ctas-cover.jpg`
+- Capturas WA: hay `wa-1.png` … `wa-5.png`
+- No versionar los PDF de pago (`public/pdf/*.pdf`): repo público + compra simulada. Originales en Descargas.

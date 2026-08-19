@@ -23,6 +23,7 @@ const SERVICES: Service[] = [
     blurb:
       "Gestión estratégica, constante y profesional de la presencia digital de la marca.",
     includes: [
+      "Estrategia de marketing inicial",
       "Optimización estética del feed",
       "Ideas de contenido alineadas a la marca",
       "Planificación IG / TikTok",
@@ -43,7 +44,6 @@ const SERVICES: Service[] = [
       "Análisis FODA",
       "Ideas de contenido estratégicas",
     ],
-    note: "Incluida sin costo extra si contratás Community Manager.",
   },
   {
     id: "ads",
@@ -67,7 +67,6 @@ const SERVICES: Service[] = [
       "Valor por hora de creación de contenido",
       "Se realiza de forma presencial",
       "De 1 hora de grabación: aprox. 4 videos",
-      "Independiente del servicio de Community Manager",
     ],
   },
   {
@@ -104,10 +103,10 @@ type PdfProduct = {
 const PDF_PRODUCTS: PdfProduct[] = [
   {
     id: "hooks",
-    title: "Pack de 100 hooks para reel",
+    title: "Pack de 120 hooks para reel",
     blurb: "Aperturas listas para frenar el scroll y empezar fuerte.",
     category: "Recursos PDF",
-    priceLabel: "Precio a confirmar",
+    priceLabel: "$39.999",
     coverSrc: "/pdf/hooks-cover.jpg",
   },
   {
@@ -128,10 +127,10 @@ const PDF_PRODUCTS: PdfProduct[] = [
   },
   {
     id: "ideas",
-    title: "X ideas de contenido para tu negocio",
+    title: "100 ideas de contenido para tu negocio",
     blurb: "Ideas accionables para no quedarte sin qué publicar.",
     category: "Recursos PDF",
-    priceLabel: "Precio a confirmar",
+    priceLabel: "$21.999",
     coverSrc: "/pdf/ideas-cover.jpg",
   },
 ];

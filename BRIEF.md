@@ -39,8 +39,8 @@
 - Sin bloque reel de Instagram.
 
 ### Servicios (6)
-1. Community Manager (mensual)
-2. Estrategia Marketing inicial (incluida sin costo extra si contratan CM)
+1. Community Manager (mensual; incluye estrategia de marketing inicial)
+2. Estrategia Marketing inicial (también se puede contratar aparte)
 3. Meta Ads (Denise Yafar; recomendar post 1er mes)
 4. Creación de contenido presencial (por hora; ~4 videos/hora)
 5. Diseño gráfico (redes + impresión)
