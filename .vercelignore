@@ -1,0 +1,2 @@
+# PDFs de pago: el CLI de Vercel no respeta solo .gitignore
+public/pdf/*.pdf
